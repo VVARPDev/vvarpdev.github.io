@@ -263,16 +263,7 @@
                 //place global settings here
                 INTERNAL_SMOOTHFACTOR_POS: .075,
             }
-            const gl = canvas.getContext("webgl2");
-if (gl) {
-    const stencilBits = gl.getParameter(gl.STENCIL_BITS);
-    console.log("Stencil bits supported:", stencilBits);
-    if (stencilBits === 0) {
-        console.error("!!! STENCIL BUFFER NOT SUPPORTED on this device !!!");
-    }
-} else {
-    console.error("WebGL2 not supported");
-}
+            
     </script>
 </body>
 </html>
